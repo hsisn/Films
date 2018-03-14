@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+lister();
     film();
 
     //touts les films

@@ -16,6 +16,11 @@ include_once "includes/init.php";
         <link rel="stylesheet" href="css/films.css" type="text/css" />
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Films/filmsControleurVue.js" type="text/javascript"></script>
+        <script src="Films/filmsRequetes.js" type="text/javascript"></script>
+        <script>
+            
+        </script>
     </head>
     <body>
 

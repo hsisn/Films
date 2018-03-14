@@ -8,7 +8,6 @@ include "includes/db.php";
 
 if (isset($_POST["getfilm"])) {
 
-
     $film_query = "SELECT * FROM tabfilms ";
     $run_query = mysqli_query($connexion, $film_query);
     if (mysqli_num_rows($run_query) > 0) {
@@ -28,23 +27,23 @@ if (isset($_POST["getfilm"])) {
                 $email = "";
             }
 
-
+/*
             echo "
-				<div class='col-md-4'>
-							<div class='panel panel-success'> 
-                                                        
-		
-								<div class='panel-heading'><span style='font-weight: bold;font-size: 15px;'>$pro_titre</span><br>$pro_res</div>
-								<div class='panel-body'>
-								<a  href=\"afficherDetail.php?name=" . ($pro_id) . "\" class=\"thumbnail\">	<img src='pochettes/$pro_image' style='width:250px; height:250px;'/></a>
-								</div>
-								<div class='panel-heading'><span style='font-weight: bold'>$pro_prix.99 $</span>" .
-            ($email != 'admin@admin.com' ? "  <button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Ajouter Au Panier</button>" : "") .
-            "</div>
+            <div class='col-md-4'>
+                <div class='panel panel-success'> 
+                    <div class='panel-heading'><span style='font-weight: bold;font-size: 15px;'>$pro_titre</span><br>$pro_res
+                    </div>
+                    
+                    <div class='panel-body'>
+                    <a  href=\"afficherDetail.php?name=" . ($pro_id) . "\" class=\"thumbnail\">	<img src='pochettes/$pro_image' style='width:250px; height:250px;'/></a>
+                    </div>
+                    
+                    <div class='panel-heading'><span style='font-weight: bold'>$pro_prix.99 $</span>" .($email != 'admin@admin.com' ? 
+                    "<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Ajouter Au Panier</button>" : "") .
+                    "</div>
                                                             
-							</div>
-						</div>	
-			";
+                </div>
+            </div>";*/
         }
     }
 }
@@ -80,11 +79,11 @@ if (isset($_POST["get_seleted_Category"])) {
 								<div class='panel-heading'><span style='font-weight: bold;font-size: 15px;'>$pro_titre</span><br>$pro_res</div>
 								<div class='panel-body'>
 								<a  href=\"afficherDetail.php?name=" . ($pro_id) . "\" class=\"thumbnail\">	"
-                                                                . "<img src='pochettes/$pro_image' style='width:250px; height:250px;'/></a>
+        . "<img src='pochettes/$pro_image' style='width:250px; height:250px;'/></a>
 								</div>
 								<div class='panel-heading'><span style='font-weight: bold'>$pro_prix.99 $</span>" .
-                                                                ($email != 'admin@admin.com' ? "  <button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Ajouter Au Panier</button>" : "") .
-                                                                "</div>
+        ($email != 'admin@admin.com' ? "  <button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Ajouter Au Panier</button>" : "") .
+        "</div>
                                                             
 							</div>
 						</div>	
@@ -154,21 +153,7 @@ if (isset($_POST["count_item"])) {
         echo 0;
     }
 
-
-
-
-
-
-
-
-
-
-
     mysqli_close($connexion);
-
-
-
-
 
     exit();
 }
