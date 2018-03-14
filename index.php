@@ -1,13 +1,13 @@
 <?php
 include_once "header.php";
-?>
 
-<?php if (logged_in() && get_name($_SESSION['email']) == 'admin') : ?>
+if (logged_in() && get_name($_SESSION['email']) == 'admin') :
+    ?>
 
     <div style='margin-left:30px;margin-top: 5px;background-color: yellow;font-size: 15px;float:left'><span class="glyphicon glyphicon-cog"></span><a href="lister.php" >Dashboard</a>    </div>							                         
 
-
-<?php endif; ?>
+<?php endif;
+?>
 
 
 <br>    <br>
@@ -37,21 +37,23 @@ include_once "header.php";
         </div>
         <div class="col-md-10 col-md-12">
             <div class="row">
-               					
 
-                    <div class="col-md-12 col-md-12" id="product_msg">
-                    </div>
-              
+
+                <div class="col-md-12 col-md-12" id="product_msg">
+                </div>
+
 
             </div>
+
+
             <div class="panel panel-success">
                 <div class="panel-heading">Tous les  films</div>
-                <div class="panel-body">
+                
                     <div id="get_film">
 
                     </div>
 
-                </div>
+                
                 <div class="panel-footer">&copy; 2018</div>
             </div>
         </div>

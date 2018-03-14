@@ -5,11 +5,11 @@ function rendreVisible(elem){
 function rendreInvisible(elem){
 	document.getElementById(elem).style.display='none';
 }
-
+/*
 function lister(){
 	document.getElementById('formLister').submit();
 }
-
+*/
 
 
 
