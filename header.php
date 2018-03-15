@@ -18,9 +18,8 @@ include_once "includes/init.php";
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="Films/filmsControleurVue.js" type="text/javascript"></script>
         <script src="Films/filmsRequetes.js" type="text/javascript"></script>
-        <script>
-            
-        </script>
+       
+        
     </head>
     <body>
 

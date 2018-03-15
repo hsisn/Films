@@ -1,11 +1,11 @@
 //vue films
 function listerF(listFilms) {
     var taille = listFilms.length;
-    var rep = "<div class='col-md-4'>";
+    var rep = "";
 
     for (var i = 0; i < taille; i++) {
 
-<<<<<<< HEAD
+rep += "<div class='col-md-4'>";
             rep += "<div class='panel panel-success'>";
                 rep += "<div class='panel-heading'><span style='font-weight: bold;font-size: 15px;'>" + listFilms[i].titre + "</span><br>"+listFilms[i].res+"</div>";
                     
@@ -21,19 +21,7 @@ function listerF(listFilms) {
     }
     
   $('#get_film').html(rep);
-=======
-        rep += "<div class='panel panel-success'>";
-        rep += "<div class='panel-heading'><span style='font-weight: bold;font-size: 15px;'>" + listFilms[i].titre + "</span><br>$pro_res</div>";
-        rep += "<div class='panel-body'>";
-        rep += "<a  href=\"afficherDetail.php?name=" + listFilms[i].idf + "\" class=\"thumbnail\"><img src='pochettes/"+listFilms[i].pochette +"' style='width:250px; height:250px;'/></a></div>";
-        rep += "<div class='panel-heading'><span style='font-weight: bold'>" + listFilms[i].prix + "</span>" + "($email != 'admin@admin.com' ?";
-        rep += "<button pid=" + listFilms[i].idf + " style='float:right;' id='product' class='btn btn-danger btn-xs'>Ajouter Au Panier</button> : ) + </div>";
 
-        rep += "</div>";
-        rep += "</div>";
-    }
-    $('#get_film').html(rep);
->>>>>>> 1f369710d226e425d6cb5fce301e6286a41631aa
 }
 
 
@@ -77,4 +65,3 @@ var filmsVue = function (reponse) {
 
     }
 }
-

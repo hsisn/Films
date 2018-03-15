@@ -2,9 +2,9 @@ $(document).ready(function () {
 
 
 lister();
-    film();
+    //film();
 
-    //touts les films
+    //tous les films
     function film() {
         $.ajax({
             url: "gestionFilms.php",

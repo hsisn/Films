@@ -27,7 +27,7 @@ if (isset($_POST["getfilm"])) {
                 $email = "";
             }
 
-/*
+
             echo "
             <div class='col-md-4'>
                 <div class='panel panel-success'> 
@@ -43,7 +43,7 @@ if (isset($_POST["getfilm"])) {
                     "</div>
                                                             
                 </div>
-            </div>";*/
+            </div>";
         }
     }
 }
