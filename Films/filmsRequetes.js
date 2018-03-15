@@ -6,13 +6,22 @@ function enregistrer(){
 		type : 'POST',
 		url : 'Films/filmsControleur.php',
 		data : formFilm,
+<<<<<<< HEAD
 		dataType : 'text', //text pour le voir en format de string
+=======
+		dataType : 'json', //text pour le voir en format de string
+>>>>>>> 1f369710d226e425d6cb5fce301e6286a41631aa
 		//async : false,
 		//cache : false,
 		contentType : false,
 		processData : false,
+<<<<<<< HEAD
 		success : function (reponse){alert(reponse);
 					//filmsVue(reponse);
+=======
+		success : function (reponse){//alert(reponse);
+					filmsVue(reponse);
+>>>>>>> 1f369710d226e425d6cb5fce301e6286a41631aa
 		},
 		fail : function (err){
 		   
